@@ -33,7 +33,7 @@ h1 {
   font-size: 1rem;
   font-weight: bold;
   font-style: italic;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 #doc-dates {
