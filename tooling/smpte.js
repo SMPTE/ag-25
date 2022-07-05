@@ -14,8 +14,9 @@ function loadDocMetadata() {
   metadata.pubTitle = document.title;
 
   metadata.pubType = params.get("pubType") || getHeadMetadata("pubType");
-  metadata.pubStatus = params.get("pubStatus") || getHeadMetadata("pubStatus");
+  metadata.pubState = params.get("pubState") || getHeadMetadata("pubState");
   metadata.pubNumber = params.get("pubNumber") || getHeadMetadata("pubNumber");
+  metadata.pubDateTime = params.get("pubDateTime") || getHeadMetadata("pubDateTime");
 
   return metadata;
 }
@@ -36,6 +37,13 @@ function insertFrontMatter(docMetadata) {
 
   const longDoctype = { "AG": "Administrative Guideline" }[docMetadata.pubType];
 
+  const actualPubDateTime = (() => {
+    if (docMetadata.pubDateTime === null)
+      return new Date();
+
+    return docMetadata.pubDateTime;
+  })();
+
   sec = document.createElement("section");
   sec.id = FRONT_MATTER_ID;
   sec.innerHTML = `<div id="doc-designator" itemtype="http://purl.org/dc/elements/1.1/">
@@ -43,7 +51,7 @@ function insertFrontMatter(docMetadata) {
     <img id="smpte-logo" src="tooling/smpte-logo.png" />
     <div id="long-doc-type">${longDoctype}</div>
     <h1>${docMetadata.pubTitle}</h1>
-    <div id="doc-status">${docMetadata.pubStatus}</div>
+    <div id="doc-status">${docMetadata.pubState} ${actualPubDateTime}</div>
   <hr />
   </section>`;
 
