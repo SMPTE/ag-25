@@ -1,15 +1,11 @@
-<!DOCTYPE html lang="en">
+<!DOCTYPE html>
 <html>
 
 <head itemscope="itemscope" itemtype="http://smpte.org/standards/documents">
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="tooling/smpte.js"></script>
-  <link rel="stylesheet" href="tooling/smpte.css" />
-  <!-- Do not edit above this line -->
-  <!-- Start of editable section in header-->
-  <!-- Update only content attributes in each meta element below as needed -->
+  <script src="../tooling/smpte.js"></script>
   <meta itemprop="pubType" content="AG" />
   <meta itemprop="pubNumber" content="25" />
   <meta itemprop="pubState" content="draft" />
@@ -21,29 +17,11 @@
 
 <body>
 
-  <!-- Start of TOC - Do not remove or add anything in this section, generation is automated -->
-  <section id="sec-toc"></section>
-  <!-- End of TOC -->
-
-  <!-- Start of Forward - Do not remove or add anything in this section, generation is automated -->
-  <section id="sec-foreword"></section>
-  <!-- End of Forward -->
-
-  <!-- Start of Scope - Do not remove this section -->
   <section id="sec-scope">
-    <!-- Add paragraphs in this section as needed for scope -->
     <p>This Administrative Guideline specifies selected uses of the JavaScript Object Notation (JSON) in SMPTE Engineering Documents.</p>
   </section>
-  <!-- End of Scope -->
-
-  <!-- Start of Conformance - Do not remove or add anything in this section, generation is automated -->
-  <section id="sec-conformance"></section>
-  <!-- End of Conformance -->
-
-  <!-- Start of Normative references - Do not remove this section -->
+  
   <section id="sec-normative-references">
-
-    <!-- Add `li` sub elements as needed in this section as needed for references. If no Normative references, remove the entire `ul` element. Pre text for this section is auto generated based on `ul` present or not. -->
     <ul>
       <li><cite id="bib-ietf-rfc-3986">IETF RFC 3986</cite>, Uniform Resource Identifiers (URI): Generic Syntax, T. Berners-Lee, et al., January 2005.
       <a>http://www.ietf.org/rfc/rfc3986.txt</a></li>
@@ -55,17 +33,6 @@
       <a>http://www.ietf.org/rfc/rfc8259.txt</a></li>
     </ul>
   </section>
-  <!-- End of Normative references -->
-
-  <!-- Start of Terms and definitions - Do not remove this section -->
-  <section id="sec-terms-and-definitions">
-
-    <!-- Use the `ul` element to list external documents where Terms are defined (use same logic as referenced docs in the body of the document as example shows). Add `dt/dd` sub element pairs as needed for Terms to be defined internally in this document. Remove either the `ul` if no external Terms, or `dl` if no internally defined Terms. If no Terms needed to be defined at all, remove the both `ul` and `dl` elements. Pre text for this section is auto generated based on what elements are present. -->
-
-  </section>
-  <!-- End of Terms and definitions -->
-
-  <!-- Start of editable area. Add sections as needed, following the examples below. `id` attribue is required for each section (and subsection) for linking into TOC. Headers are required for labeling each section. Use `h2` element for top level, and `h3`, `h4`, etc. for nested sub sections as needed. For Annexes, add `class="annex"` to the top level section element, as example shows. Numbering is auto generated, including nesting. --> 
 
   <section id="sec-smpte-json-structures">
     <h2>SMPTE JSON structures</h2>
@@ -220,7 +187,7 @@ STABLEREV = 4(DIGIT) [2(DIGIT)]
       
       <p>A <a>SMPTE JSON Schema Resource</a> can be used informatively by an Engineering Document, either by inclusion or by reference.</p>
       
-      <p class="note">The current specification of JSON Schema, though well-supported, is not a normatively referenceable document per the <a href="#bib-smpte-standards-operation-manual"></a> (section 10 Normative References) and <a href="#bib-smpte-ag-03"></a>. Thus, provision of <a>SMPTE JSON Schema Resource</a>s, at this time, is strictly informative.</p>
+      <p class="note">The current specification of JSON Schema, though well-supported, is not a normatively referenceable document per the <a href="#bib-smpte-standards-operations-manual"></a> (section 10 Normative References) and <a href="#bib-smpte-ag-03"></a>. Thus, provision of <a>SMPTE JSON Schema Resource</a>s, at this time, is strictly informative.</p>
     </section>
     
     <section id="sec-precedence">
@@ -408,24 +375,18 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
   </section>
 
-<!-- End of editable sections -->
-
-<!-- Start of Bibliography - ONLY use if infomative references are present - If no Bibliographic references, remove the entire section. -->
   <section id="sec-bibliography">
     <ul>
-      <li><cite id="bib-smpte-standards-operation-manual">SMPTE Standards Operation Manual</cite>, v3.1
-        <a>https://f.hubspotusercontent00.net/hubfs/5253154/SMPTE%20Standards%20OM%20v3.1.pdf</a>
-      </li>
+      <li><cite id="bib-smpte-standards-operations-manual">SMPTE Standards Operations Manual</cite>
+      <a>https://www.smpte.org/about/policies-and-governance</a></li>
       <li><cite id="bib-smpte-ag-03">SMPTE AG-03</cite>, Permitted Normative References
-        <a>https://smpte.github.io/ag-03/</a>
+        <a>https://www.smpte.org/about/policies-and-governance</a>
       </li>
       <li>Wright, A., H. Andrews; B. Hutton, G. Dennis, <cite id="bib-draft-bhutton-json-schema-00">"JSON Schema: A Media Type for Describing JSON Documents"</cite>, IETF, December 8, 2020,
       <a>https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00</a>
       </li>
     </ul>
   </section>
-<!-- End of Bibliography -->
 
-<!-- Do not edit below this line -->
 </body>
 </html>
