@@ -1,4 +1,4 @@
-# SMPTE AG 25 - Use of JSON in Engineering Documents
+# SMPTE _AG 25_ - _Use of JSON in Engineering Documents_
 
 _This repository is *public*._
 
