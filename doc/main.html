@@ -29,6 +29,7 @@
       <a>https://datatracker.ietf.org/doc/html/rfc7405.txt</a></li>
       <li><cite id="bib-ietf-rfc-8259">IETF RFC 8259</cite>, The JavaScript Object Notation (JSON) Data Interchange Format, T. Bray,
       <a>http://www.ietf.org/rfc/rfc8259.txt</a></li>
+      <li><cite id="bib-ag-30">SMPTE AG 30</cite>, Software License <a>https://www.smpte.org/about/policies-and-governance</a></li>
     </ul>
   </section>
 
@@ -283,64 +284,26 @@ STABLEREV = 4(DIGIT) [2(DIGIT)]
       <h3>License</h3>
       
       <p>
-        Any <a>SMPTE JSON Structure</a> or <a>SMPTE JSON Schema Resource</a>, whether provided within the prose or as an Additional Element of an Engineering Document, shall be licensed according to <a href="#sec-json-doc-license"></a>.
-      </p>
-      
-      <p class="note">
-        The license portion of Annex A is verbatim the BSD-3-Clause license available at <a>https://spdx.org/licenses/BSD-3-Clause.html</a>.
+        Any <a>SMPTE JSON Structure</a> or <a>SMPTE JSON Schema Resource</a>, whether provided within the prose or as an Additional Element of an Engineering Document, shall be licensed according to <a href="#bib-ag-30"></a>.
       </p>
     </section>
     
     <section id="sec-cc-license-schema-resources">
       <h3>Copyright and License in <a>SMPTE JSON Schema Resource</a>s</h3>
       
-      <p>Any <a>SMPTE JSON Schema Resource</a> shall include the copyright and license provided in <a href="#sec-json-doc-license"></a> in the form of the <code>$comment</code> element specified in <a href="#sec-cc-license-element"></a>.</p>
+      <p>Any <a>SMPTE JSON Schema Resource</a> shall include the copyright and license provided in <a href="#bib-ag-30"></a> in the form of the <code>$comment</code> element specified in <a href="#sec-cc-license-element"></a>.</p>
 
     </section>
-  </section>
-
-  <section class="annex" id="sec-json-doc-license">
-    <h2>JSON Document License</h2>
-
-<pre>
-Copyright (c), Society of Motion Pictures and Television Engineers. 
-
-Redistribution and use in source and binary forms, with or without modification,
-are permitted provided that the following conditions are met: 
-
-1. Redistributions of source code must retain the above copyright notice, this
-list of conditions and the following disclaimer. 
-
-2. Redistributions in binary form must reproduce the above copyright notice,
-this list of conditions and the following disclaimer in the documentation and/or
-other materials provided with the distribution. 
-
-3. Neither the name of the copyright holder nor the names of its contributors
-may be used to endorse or promote products derived from this software without
-specific prior written permission. 
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
-ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
-ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-</pre>
-
   </section>
 
   <section class="annex" id="sec-cc-license-element">
     <h2>Copyright and License Element</h2>
 
     <p>
-      The following JSON elements present the SMPTE copyright notice and the JSON Schema identifier, a URI, which is useable as a URL to access the JSON Schema Definition Document which presents, among other things, the JSON Document License shown in <a href="#sec-json-doc-license"></a>.
+      The following JSON elements present the SMPTE copyright notice and the JSON Schema identifier, a URI, which is useable as a URL to access the JSON Schema Definition Document which presents, among other things, the license specified at <a href="#bib-ag-30"></a>.
     </p>
 
-<pre>"$comment": "Copyright (c), Society of Motion Pictures and Television Engineers. Licensed under BSD-3-Clause (https://spdx.org/licenses/BSD-3-Clause.html)."</pre>
+<pre>"$comment": "See SMPTE AG 30 (https://www.smpte.org/about/policies-and-governance) for copyright and license information."</pre>
 
     <p>The following example JSON Schema incorporates the above element in accordance with <a href="#sec-cc-license-schema-resources"></a>, with the initial keyword order recommended in <a href="#sec-keyword-order"></a>.</p>
 
@@ -348,7 +311,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 {
   "$schema": "https://json-schema.org/draft/2020-12/meta/core",
   "$id": "https://smpte-ra.org/json-schema/2199-1/2022/foo",
-  "$comment": "Copyright (c), Society of Motion Pictures and Television Engineers. Licensed under BSD-3-Clause (https://spdx.org/licenses/BSD-3-Clause.html).",
+  "$comment": "See SMPTE AG 30 (https://www.smpte.org/about/policies-and-governance) for copyright and license information.",
   "title": "foo",
   "type": "object",
   "description": "This is an example schema for a fictitious foo object.",
